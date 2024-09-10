@@ -1,0 +1,221 @@
+<html><head><base href="https://www.pobreflix.com/planos">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POBREFLIX - Planos</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #ffffff;
+  }
+  header {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e50914;
+    text-decoration: none;
+  }
+  nav {
+    margin-top: 20px;
+  }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  h1 {
+    font-size: 2.5em;
+    color: #e50914;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .plans-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .plan-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .plan-card:hover {
+    transform: scale(1.05);
+  }
+  .plan-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #e50914;
+  }
+  .plan-price {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .plan-features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .plan-features li {
+    margin-bottom: 10px;
+  }
+  .subscribe-btn {
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .subscribe-btn:hover {
+    background-color: #ff0a16;
+  }
+  .comparison-table {
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+  }
+  .comparison-table th, .comparison-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+  }
+  .comparison-table th {
+    background-color: #e50914;
+    color: #ffffff;
+  }
+  .comparison-table tr:nth-child(even) {
+    background-color: #1f1f1f;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <a href="https://www.pobreflix.com" class="logo">POBREFLIX</a>
+    <nav>
+      <a href="https://www.pobreflix.com/filmes">Filmes</a>
+      <a href="https://www.pobreflix.com/planos">Planos</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Escolha seu Plano POBREFLIX</h1>
+    
+    <div class="plans-container">
+      <div class="plan-card">
+        <div class="plan-name">Plano Miséria</div>
+        <div class="plan-price">R$ 9,90/mês</div>
+        <ul class="plan-features">
+          <li>Acesso a filmes de domínio público</li>
+          <li>Qualidade 480p</li>
+          <li>1 tela simultânea</li>
+          <li>Anúncios a cada 15 minutos</li>
+        </ul>
+        <button class="subscribe-btn">Assinar</button>
+      </div>
+      
+      <div class="plan-card">
+        <div class="plan-name">Plano Pobreza</div>
+        <div class="plan-price">R$ 19,90/mês</div>
+        <ul class="plan-features">
+          <li>Acesso a filmes B e C</li>
+          <li>Qualidade 720p</li>
+          <li>2 telas simultâneas</li>
+          <li>Anúncios a cada 30 minutos</li>
+        </ul>
+        <button class="subscribe-btn">Assinar</button>
+      </div>
+      
+      <div class="plan-card">
+        <div class="plan-name">Plano Classe Média</div>
+        <div class="plan-price">R$ 29,90/mês</div>
+        <ul class="plan-features">
+          <li>Acesso a todos os filmes</li>
+          <li>Qualidade 1080p</li>
+          <li>4 telas simultâneas</li>
+          <li>Sem anúncios</li>
+        </ul>
+        <button class="subscribe-btn">Assinar</button>
+      </div>
+    </div>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Recurso</th>
+          <th>Plano Miséria</th>
+          <th>Plano Pobreza</th>
+          <th>Plano Classe Média</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Preço Mensal</td>
+          <td>R$ 9,90</td>
+          <td>R$ 19,90</td>
+          <td>R$ 29,90</td>
+        </tr>
+        <tr>
+          <td>Catálogo de Filmes</td>
+          <td>Domínio Público</td>
+          <td>Filmes B e C</td>
+          <td>Catálogo Completo</td>
+        </tr>
+        <tr>
+          <td>Qualidade de Vídeo</td>
+          <td>480p</td>
+          <td>720p</td>
+          <td>1080p</td>
+        </tr>
+        <tr>
+          <td>Telas Simultâneas</td>
+          <td>1</td>
+          <td>2</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Anúncios</td>
+          <td>A cada 15 minutos</td>
+          <td>A cada 30 minutos</td>
+          <td>Sem anúncios</td>
+        </tr>
+        <tr>
+          <td>Downloads</td>
+          <td>Não</td>
+          <td>Sim (limite 5 filmes)</td>
+          <td>Sim (ilimitado)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    document.querySelectorAll('.subscribe-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const planName = this.closest('.plan-card').querySelector('.plan-name').textContent;
+        alert(`Obrigado por escolher o ${planName}! Redirecionando para o pagamento...`)
+      });
+    });
+  </script>
+</body>
+</html>
